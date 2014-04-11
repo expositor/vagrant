@@ -24,4 +24,6 @@ Setup for easily hosting multiple projects on various Nginx sites.
 
 ## Notes
 
-Database password for the `vagrant` user is `secret`.
+MySQL user is `root` and password is `secret`.
+
+Postgres user is `vagrant` and password is `secret`.
