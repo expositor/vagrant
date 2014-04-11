@@ -7,6 +7,7 @@ My Vagrantfile for development bliss.
 - Nginx
 - MySQL
 - Postgres
+- Node (With Grunt & Gulp)
 - Redis
 - Memcached
 - Beanstalkd
