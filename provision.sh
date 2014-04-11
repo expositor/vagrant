@@ -116,9 +116,10 @@ sed -i '/^bind-address/s/bind-address.*=.*/bind-address = 10.0.2.15/' /etc/mysql
 mysql --user="root" --password="secret" -e "GRANT ALL ON *.* TO root@'10.0.2.2' IDENTIFIED BY 'secret';"
 service mysql restart
 
-mysql --user="root" --password="secret" -e "CREATE USER 'forge'@'{{ $server->ip_address }}' IDENTIFIED BY 'secret';"
-mysql --user="root" --password="secret" -e "GRANT ALL ON *.* TO 'forge'@'{{ $server->ip_address }}' IDENTIFIED BY 'secret';"
+mysql --user="root" --password="secret" -e "CREATE USER 'vagrant'@'10.0.2.2' IDENTIFIED BY 'secret';"
+mysql --user="root" --password="secret" -e "GRANT ALL ON *.* TO 'vagrant'@'10.0.2.2' IDENTIFIED BY 'secret';"
 mysql --user="root" --password="secret" -e "FLUSH PRIVILEGES;"
+service mysql restart
 
 # Install Postgres
 
