@@ -11,7 +11,7 @@ My Vagrantfile for development bliss.
 - Memcached
 - Beanstalkd
 
-Setup for easily hosting multiple
+Setup for easily hosting multiple projects on various Nginx sites.
 
 ## Setup
 
