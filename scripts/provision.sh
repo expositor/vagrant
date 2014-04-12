@@ -19,7 +19,11 @@ apt-get update
 
 # Add My Public SSH Key
 
-echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAoCkaXT71oVSZb5KA+5ywfjdtUPXxb5XznNu5cFwrYYhEYBZkaoYKTg7dL40tfOo9pJnvMpQv8i+IcYP9bUZ3u5VD2IuINlvlcCElUoB/kwQr7Vr5IYDJZa0Fy6bNpv7jTDRfQGZzeWMeDtsF+1MyLqyNqmfi34gEnQadaKwJzLqVMG79uYHwrudQKktdJEQx67wNZ3rGXZhx4KFJw9KqqQZGZHCM9JgDqKHfCenn3TaFkc7zP7PmaqiiXfIQbnGczygYnIuf9/1tYSqPdNvZCRBhFrSgnNPTfHABVSzUrtbleHjZaDoCwpebInkcS3ysaa18zzZvkraKqbSbbZNh7Q== rsa-key-20131228" | tee -a /home/vagrant/.ssh/authorized_keys
+echo $1 | tee -a /home/vagrant/.ssh/authorized_keys
+
+# Generate A SSH Key
+
+ssh-keygen -f /home/vagrant/.ssh/id_rsa -t rsa -N ''
 
 # Install Some Basic Packages
 
@@ -29,6 +33,8 @@ make python-pip supervisor unattended-upgrades whois
 # Httpie Is A Simple Python Tool For Doing HTTP Stuff
 
 pip install httpie
+pip install fabric
+pip install python-simple-hipchat
 
 # Set My Timezone
 

@@ -1,0 +1,10 @@
+---
+key: C:/Users/Taylor/.ssh/putty_public.txt
+
+folders:
+    - map: C:/Users/Taylor/Documents/Code/Laravel/plain
+      to: /home/vagrant/Sites/plain
+
+sites:
+    - map: plain.app
+      to: /home/vagrant/Sites/plain/public
