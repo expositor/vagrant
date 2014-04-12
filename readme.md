@@ -19,7 +19,7 @@ Setup for easily hosting multiple projects on various Nginx sites.
 1. Install VirtualBox & Vagrant
 2. `vagrant box add chef/ubuntu-13.10`
 3. Clone this repository into a directory.
-4. Configure SSH key, shared folders, and Nginx sites in `Server.yaml`.
+4. Configure SSH key, shared folders, and Nginx sites in `Vagrant.yaml`.
 6. Run `vagrant up` from that directory.
 
 ## Notes
