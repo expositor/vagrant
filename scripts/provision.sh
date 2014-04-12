@@ -23,12 +23,12 @@ echo $1 | tee -a /home/vagrant/.ssh/authorized_keys
 
 # Generate A SSH Key
 
-ssh-keygen -f /home/vagrant/.ssh/id_rsa -t rsa -N ''
+sudo -u vagrant ssh-keygen -f /home/vagrant/.ssh/id_rsa -t rsa -N ''
 
 # Install Some Basic Packages
 
 apt-get install -y build-essential curl gcc git libmcrypt4 libpcre3-dev \
-make python-pip supervisor unattended-upgrades whois
+make python2.7-dev python-pip supervisor unattended-upgrades whois
 
 # Httpie Is A Simple Python Tool For Doing HTTP Stuff
 
