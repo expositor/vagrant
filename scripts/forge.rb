@@ -4,9 +4,9 @@ class Forge
 		config.vm.box = "chef/ubuntu-13.10"
 
 		config.vm.provider "virtualbox" do |vb|
-			vb.customize ["modifyvm", :id, "--memory", "2048"]
-			vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
-			vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+		  vb.customize ["modifyvm", :id, "--memory", "2048"]
+		  vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
+		  vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
 		end
 
 		# Configure Port Forwarding
