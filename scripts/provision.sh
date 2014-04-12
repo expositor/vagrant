@@ -30,7 +30,7 @@ sudo -u vagrant ssh-keygen -f /home/vagrant/.ssh/id_rsa -t rsa -N ''
 apt-get install -y build-essential curl gcc git libmcrypt4 libpcre3-dev \
 make python2.7-dev python-pip supervisor unattended-upgrades whois
 
-# Httpie Is A Simple Python Tool For Doing HTTP Stuff
+# Install A Few Helpful Python Packages
 
 pip install httpie
 pip install fabric
